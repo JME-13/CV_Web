@@ -1,4 +1,5 @@
 <template>
+    <main>
   <Menu />
   <MenuRight />
   <div class="content-container">
@@ -33,7 +34,7 @@
           </div>
   <p class="projects-btext"><span>Psst!</span> Trouve encore plus de mes projets sur <span>Behance</span>!</p>
   </div>
-
+</main>
 </template>
 
 <script>
@@ -48,7 +49,7 @@ components: {
           },
 data() {
   return {
-    // Your data properties here
+    open: false
   };
 },
 created() {
@@ -60,7 +61,20 @@ methods: {
 };
 </script>
   
-  <style scoped>
+<style scoped>
+
+    nav {
+        margin-top: 0px;
+        }
+
+    .nav-right {
+        margin-top: 65px;
+        }
+
+    .content-container {
+        margin-top: -50px;
+    }
+
   .top-container {
     background-color: #a76cad;
   }

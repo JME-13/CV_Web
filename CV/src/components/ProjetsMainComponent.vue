@@ -1,4 +1,5 @@
 <template>
+  <main>
     <div class="content-container">
       <section class="top-container"><img class="setting-icons" src="../assets/images/settingIcons.png"></section>
         <div class="projects-buttons">
@@ -18,6 +19,7 @@
 </div>
   </div>
 </div>
+</main>
     </template>
 
 <script>
@@ -38,12 +40,18 @@ export default {
 </script>
     
     <style scoped>
+
+main {
+      margin-top: 15%;
+    }
+
     .top-container {
     background-color: #da3892;
     }
 
     .content-container {
     width: 70%;
+    margin-top: -50px;
     }
 
     .projects-buttons {

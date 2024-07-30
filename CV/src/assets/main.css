@@ -5,6 +5,11 @@
   src: url(../assets/fonts/BigPixel.otf);
 }
 
+html {
+  scrollbar-color: #e593ef #e8b8ee;
+  scrollbar-width: thin;
+}
+
 body {
   position: absolute;
   inset: 0;
@@ -17,8 +22,41 @@ body {
   background-size: 45px 45px;
 }
 
+nav {
+  float: left;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.nav-right {
+  float: right;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+.nav-icons {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-text {
+  color: white;
+  font-family: Big Pixel;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 ul {
   list-style-type: none;
+}
+
+main {
+  margin-top: 15%;
 }
 
 .top-container {
@@ -44,8 +82,7 @@ ul {
   border-width: 3px;
   border-style: solid;
   box-shadow: 20px 20px 2px 1px rgba(0, 0, 255, .2);
-  color:black;
-  margin-top: 100px;
+  color: #352f6a;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;

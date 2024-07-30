@@ -1,4 +1,5 @@
 <template>
+    <main>
     <Menu />
     <MenuRight />
     <div class="content-container">
@@ -50,23 +51,15 @@
                     </div>
                 <div class="col">
                     <div class="img__wrap">
-                        <img src="../assets/images/Cards/Oropesa.png" class="img__img" alt="...">
-                            <div class="img__description_layer">
-                                <h5 class="img__description">Oropesa del Mar</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row row-cols-1 row-cols-md-3">
-                <div class="col">
-                    <div class="img__wrap">
                         <img src="../assets/images/Cards/Dialogos.png" class="img__img" alt="...">
                             <div class="img__description_layer">
                                 <h5 class="img__description">Dialogos 10</h5>
                             </div>
                         </div>
                     </div>
+                </div>
+                <br>
+                <div class="row row-cols-1 row-cols-md-3">
                 <div class="col">
                     <div class="img__wrap">
                         <img src="../assets/images/Cards/Serigrafia.png" class="img__img" alt="...">
@@ -83,22 +76,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <br>
-                <div class="row row-cols-1 row-cols-md-3">
                 <div class="col">
                     <div class="img__wrap">
                         <img src="../assets/images/Cards/JH.png" class="img__img" alt="...">
                             <div class="img__description_layer">
-                                <h5 class="img__description">PSYCHE - Joohoney</h5>
+                                <h5 class="img__description">PSYCHE</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                </div>
     <p class="projects-btext"><span>Psst!</span> Trouve encore plus de mes projets sur <span>Behance</span>!</p>
     </div>
-
+</main>
 </template>
 
 <script>
@@ -126,6 +116,20 @@ export default {
 </script>
     
     <style scoped>
+
+    nav {
+        margin-top: 213px;
+        }
+
+    .nav-right {
+        margin-top: 278px;
+        margin-right: 33px;
+        }
+
+    .content-container {
+        margin-top: -260px;
+    }
+
     .top-container {
       background-color: #7b9dd2;
     }

@@ -41,20 +41,20 @@ main {
 .forme3 {
   width: 100px;
   position: absolute;
-  top: 60px;
+  top: 240px;
   left: 430px;
 }
 .forme5 {
   width: 150px;
   position: absolute;
-  top: 100px;
+  top: 260px;
   left: 340px;
 }
 
 .Moi {
   width: 400px;
   position: absolute;
-  top: 170px;
+  top: 320px;
   right: 280px;
 }
 
@@ -77,26 +77,6 @@ span {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.get-started {
-  width: 200px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
-  color: white;
-  text-align: center;
-  font-family: Big Pixel;
-  background-color: #a76cad;
-  border-radius: 20px;
-  border-color: black;
-  border-width: 3px;
-  border-style: solid;
-}
-
-.get-started:hover {
-  background-color: #ab96ae;
 }
 
 .content {
@@ -134,7 +114,7 @@ ul {
 
 .end-text {
   position: absolute;
-  top: 330px;
+  top: 540px;
   right: 610px;
 }
 

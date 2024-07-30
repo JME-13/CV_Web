@@ -18,3 +18,15 @@
           }
       };
   </script>
+
+<style scoped>
+
+    nav {
+        margin-top: 130px;
+        }
+
+    .nav-right {
+        margin-top: 195px;
+        }
+
+</style>
