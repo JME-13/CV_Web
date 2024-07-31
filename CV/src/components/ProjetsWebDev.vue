@@ -7,28 +7,64 @@
           <div class="projects-box">
               <div class="row row-cols-1 row-cols-md-3">
               <div class="col">
-                  <div class="img__wrap">
-                      <img src="../assets/images/Cards/Bobsmade1.png" class="img__img" alt="...">
-                          <div class="img__description_layer">
-                              <h5 class="img__description">Bobsmade v1</h5>
-                          </div>
-                      </div>
+                <img src="../assets/images/Cards/blank.png" class="img__img" alt="...">
+                <PopupWrapper>
+                    <template #header>
+                        <div class="popover">
+                            <div class="img__wrap">
+                                    <img src="../assets/images/Cards/MADB.png" class="img__img" alt="...">
+                                        <div class="img__description_layer">
+                                            <h5 class="img__description">My Atiny DataBase</h5>
+                                        </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template #content>
+                        <div class="popover-content">
+                            <section class="top-container"><img class="setting-icons" src="../assets/images/settingIcons.png"></section>
+                            This is a Popup Content</div>
+                    </template>
+                </PopupWrapper>
+                </div>
+              <div class="col">
+                <img src="../assets/images/Cards/blank.png" class="img__img" alt="...">
+                <PopupWrapper>
+                    <template #header>
+                        <div class="popover2">
+                            <div class="img__wrap">
+                                    <img src="../assets/images/Cards/CV.png" class="img__img" alt="...">
+                                        <div class="img__description_layer">
+                                            <h5 class="img__description">CV Web</h5>
+                                        </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template #content>
+                        <div class="popover-content">
+                            <section class="top-container"><img class="setting-icons" src="../assets/images/settingIcons.png"></section>
+                            This is a Popup Content 2</div>
+                    </template>
+                </PopupWrapper>
                   </div>
               <div class="col">
-                  <div class="img__wrap">
-                      <img src="../assets/images/Cards/Bobsmade2.png" class="img__img" alt="...">
-                          <div class="img__description_layer">
-                              <h5 class="img__description">Bobsmade v2</h5>
-                          </div>
-                      </div>
-                  </div>
-              <div class="col">
-                  <div class="img__wrap">
-                      <img src="../assets/images/Cards/CCC.png" class="img__img" alt="...">
-                          <div class="img__description_layer">
-                              <h5 class="img__description">Central City Comics</h5>
-                          </div>
-                      </div>
+                <img src="../assets/images/Cards/blank.png" class="img__img" alt="...">
+                <PopupWrapper>
+                    <template #header>
+                        <div class="popover3">
+                            <div class="img__wrap">
+                                    <img src="../assets/images/Cards/AdG.png" class="img__img" alt="...">
+                                        <div class="img__description_layer">
+                                            <h5 class="img__description">L'Atelier des Dragons</h5>
+                                        </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template #content>
+                        <div class="popover-content">
+                            <section class="top-container"><img class="setting-icons" src="../assets/images/settingIcons.png"></section>
+                            This is a Popup Content 3</div>
+                    </template>
+                </PopupWrapper>
                   </div>
               </div>
           </div>
@@ -37,10 +73,13 @@
 </main>
 </template>
 
-<script>
+<script setup>
 import Menu from '../components/Menu.vue'
 import MenuRight from '../components/MenuRight.vue'
+import PopupWrapper from '../components/Projets/PopupWrapper.vue';
+</script>
 
+<script>
 export default {
 name: 'ProjetsWebDev',
 components: {
@@ -147,4 +186,44 @@ methods: {
   .img__wrap:hover .img__description {
       transform: translateY(0);
   }
+
+  .popover {
+    position: absolute;
+    top: 330px;
+    left: 310px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.popover2 {
+    position: absolute;
+    top: 330px;
+    left: 730px;
+    cursor: pointer;
+}
+
+.popover3 {
+    position: absolute;
+    top: 330px;
+    left: 1150px;
+    cursor: pointer;
+}
+
+.popover-content {
+  position: absolute;
+  top: 150px;
+  left: 25%;
+  background: #fff;
+  border-radius: 20px;
+  border-color: #333;
+  border-width: 3px;
+  border-style: solid;
+  margin-top: 4px;
+  color: #333;
+  text-align: left;
+  width: 50%;
+  height: 500px;
+  z-index: 1;
+}
+
   </style>
